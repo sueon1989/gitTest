@@ -12,8 +12,7 @@
 <form action="/strcount" method="post">
 	<!-- <input type="text" name="str" value="안녕하세요"> -->
 	<textarea name="str" cols="40" rows="8">
-	안녕하세요
-	</textarea>
+	</textarea><br />
 	<input type="submit" value="글자수 세기">
 </form>
 

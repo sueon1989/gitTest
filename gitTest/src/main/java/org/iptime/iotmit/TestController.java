@@ -26,10 +26,10 @@ public class TestController {
 	public String test1Result(String str, Model model) {
 		
 		log.info("입력받은 글자: "+ str);
-		log.info("글자수 계산: "+ str.length());
+		log.info("글자수 계산: "+ str.replaceAll(" ", "").length());	// 공백 제외하고 count
 		
 		model.addAttribute("str", str);
-		model.addAttribute("strcount", str.length());
+		model.addAttribute("strcount", str.replaceAll(" ", "").length());
 
 		return "test1Result";
 		// test1Result.jsp 페이지로
